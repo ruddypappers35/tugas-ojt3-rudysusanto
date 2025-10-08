@@ -5,7 +5,7 @@ const Header: React.FC = () => {
   return (
     <header className="text-center space-y-2 py-8">
       <h1 className="text-2xl sm:text-3xl md:text-4xl font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-teal-500">
-        TUGAS OJT 3 PELATIHAN KKA SMP MUBA 1
+        Tugas OJT 3 PELATIHAN KKA SMP MUBA 1
       </h1>
       <h2 className="text-lg sm:text-xl md:text-2xl font-semibold text-slate-700">
         Peer Teaching: “PERAN KECERDASAN ARTIFISIAL DALAM KOMUNIKASI”

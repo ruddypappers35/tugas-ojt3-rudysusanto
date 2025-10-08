@@ -1,5 +1,5 @@
 import React from 'react';
-import { Github, Globe, MessageSquare } from 'lucide-react';
+import { Github, Globe, MessageSquare, CheckCircle2 } from 'lucide-react';
 
 const socialLinks = [
   { 
@@ -29,7 +29,10 @@ const ProfileCard: React.FC = () => {
           className="w-28 h-28 rounded-full border-4 border-cyan-500 shadow-lg"
         />
         <div className="text-center sm:text-left">
-          <h3 className="text-2xl font-bold text-slate-900">Rudy Susanto, S.Pd</h3>
+          <div className="flex items-center justify-center sm:justify-start gap-2">
+            <h3 className="text-2xl font-bold text-slate-900">Rudy Susanto, S.Pd</h3>
+            <CheckCircle2 className="w-6 h-6 text-white fill-blue-500" aria-label="Verified" />
+          </div>
           <p className="text-lg text-slate-600">SMPN 2 Tungkal Jaya</p>
           <div className="mt-4 flex items-center justify-center sm:justify-start gap-6 text-slate-600">
             {socialLinks.map((link, index) => (
