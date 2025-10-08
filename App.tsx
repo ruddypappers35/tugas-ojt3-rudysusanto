@@ -3,6 +3,7 @@ import Header from './components/Header';
 import ProfileCard from './components/ProfileCard';
 import DocumentSection from './components/DocumentSection';
 import Modal from './components/Modal';
+import Footer from './components/Footer';
 
 const App: React.FC = () => {
   const [modalContent, setModalContent] = useState<{ url: string; title: string } | null>(null);
@@ -22,6 +23,7 @@ const App: React.FC = () => {
         <Header />
         <ProfileCard />
         <DocumentSection onOpenModal={openModal} />
+        <Footer />
       </main>
       {modalContent && (
         <Modal 
