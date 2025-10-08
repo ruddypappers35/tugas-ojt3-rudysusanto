@@ -1,5 +1,5 @@
 import React from 'react';
-import { Github, Globe, MessageSquare, CheckCircle2 } from 'lucide-react';
+import { Github, Globe, MessageSquare, CheckCircle2, AtSign } from 'lucide-react';
 
 const socialLinks = [
   { 
@@ -17,6 +17,11 @@ const socialLinks = [
     icon: Github, 
     label: 'GitHub' 
   },
+  {
+    href: 'https://www.threads.net/@ruddy_pappers',
+    icon: AtSign,
+    label: 'Threads'
+  }
 ];
 
 const ProfileCard: React.FC = () => {

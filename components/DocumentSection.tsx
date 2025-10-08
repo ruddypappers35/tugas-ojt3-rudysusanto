@@ -51,7 +51,7 @@ const DocumentSection: React.FC<DocumentSectionProps> = ({ onOpenModal }) => {
                 window.open(doc.url, '_blank', 'noopener,noreferrer');
               }
             }}
-            className="group relative flex items-center justify-center gap-3 w-full px-6 py-4 text-lg font-semibold text-slate-700 bg-white rounded-lg overflow-hidden transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-lg hover:shadow-cyan-500/30 border border-slate-200"
+            className="group relative flex items-center justify-start gap-3 w-full px-6 py-4 text-lg font-semibold text-slate-700 bg-white rounded-lg overflow-hidden transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-lg hover:shadow-cyan-500/30 border border-slate-200"
           >
             <span className="absolute left-0 top-0 h-0 w-0 border-t-2 border-cyan-500 transition-all duration-300 group-hover:w-full"></span>
             <span className="absolute right-0 top-0 h-0 w-0 border-r-2 border-cyan-500 transition-all duration-300 group-hover:h-full"></span>
