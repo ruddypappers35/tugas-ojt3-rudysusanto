@@ -8,7 +8,7 @@ const Header: React.FC = () => {
         className="text-2xl sm:text-3xl md:text-4xl font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-teal-500 animate-fade-in-up"
         style={{ animationDelay: '100ms' }}
       >
-        Tugas OJT 3 PELATIHAN KKA SMP MUBA 1
+        TUGAS OJT 3 PELATIHAN KKA SMP MUBA 1
       </h1>
       <h2 
         className="text-lg sm:text-xl md:text-2xl font-semibold text-slate-700 animate-fade-in-up"
