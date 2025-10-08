@@ -26,7 +26,10 @@ const socialLinks = [
 
 const ProfileCard: React.FC = () => {
   return (
-    <div className="bg-slate-50/60 backdrop-blur-sm border border-slate-300/50 rounded-2xl p-6 shadow-xl shadow-slate-300/50">
+    <div 
+      className="bg-slate-50/60 backdrop-blur-sm border border-slate-300/50 rounded-2xl p-6 shadow-xl shadow-slate-300/50 animate-fade-in-up"
+      style={{ animationDelay: '400ms' }}
+    >
       <div className="flex flex-col sm:flex-row items-center gap-6">
         <img
           src="https://rdsusanto.my.id/src/images/profile/user.svg"
@@ -47,7 +50,7 @@ const ProfileCard: React.FC = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 title={link.label}
-                className="p-2 rounded-full hover:bg-cyan-100 hover:text-cyan-600 transition-colors duration-300"
+                className="p-2 rounded-full hover:bg-cyan-100 hover:text-cyan-600 transition-all duration-300 hover:scale-110"
               >
                 <link.icon className="w-6 h-6" />
               </a>

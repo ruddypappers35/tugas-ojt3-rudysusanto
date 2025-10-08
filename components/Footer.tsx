@@ -3,7 +3,10 @@ import { Code, Coffee } from 'lucide-react';
 
 const Footer: React.FC = () => {
   return (
-    <footer className="text-center py-8">
+    <footer 
+      className="text-center py-8 animate-fade-in-up"
+      style={{ animationDelay: '1000ms' }}
+    >
       <p className="text-slate-500 flex items-center justify-center gap-2">
         <span>Dibuat dengan</span>
         <Code className="w-5 h-5 text-cyan-600" />

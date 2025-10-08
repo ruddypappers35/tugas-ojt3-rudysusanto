@@ -39,9 +39,14 @@ const documents = [
 const DocumentSection: React.FC<DocumentSectionProps> = ({ onOpenModal }) => {
   return (
     <div className="bg-slate-50/60 backdrop-blur-sm border border-slate-300/50 rounded-2xl p-6 shadow-xl shadow-slate-300/50">
-      <h3 className="text-xl font-bold text-center mb-6 text-slate-900">Materi Pembelajaran</h3>
+      <h3 
+        className="text-xl font-bold text-center mb-6 text-slate-900 animate-fade-in-up"
+        style={{ animationDelay: '500ms' }}
+      >
+        Materi Pembelajaran
+      </h3>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-        {documents.map((doc) => (
+        {documents.map((doc, index) => (
           <button
             key={doc.id}
             onClick={() => {
@@ -51,7 +56,8 @@ const DocumentSection: React.FC<DocumentSectionProps> = ({ onOpenModal }) => {
                 window.open(doc.url, '_blank', 'noopener,noreferrer');
               }
             }}
-            className="group relative flex items-center justify-start gap-3 w-full px-6 py-4 text-lg font-semibold text-slate-700 bg-white rounded-lg overflow-hidden transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-lg hover:shadow-cyan-500/30 border border-slate-200"
+            className="group relative flex items-center justify-start gap-3 w-full px-6 py-4 text-lg font-semibold text-slate-700 bg-white rounded-lg overflow-hidden transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-lg hover:shadow-cyan-500/30 border border-slate-200 animate-fade-in-up"
+            style={{ animationDelay: `${600 + index * 100}ms` }}
           >
             <span className="absolute left-0 top-0 h-0 w-0 border-t-2 border-cyan-500 transition-all duration-300 group-hover:w-full"></span>
             <span className="absolute right-0 top-0 h-0 w-0 border-r-2 border-cyan-500 transition-all duration-300 group-hover:h-full"></span>
