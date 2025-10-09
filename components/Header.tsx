@@ -11,13 +11,13 @@ const Header: React.FC = () => {
         TUGAS OJT 3 PELATIHAN KKA SMP MUBA 1
       </h1>
       <h2 
-        className="text-lg sm:text-xl md:text-2xl font-semibold text-slate-700 animate-fade-in-up"
+        className="text-lg sm:text-xl md:text-2xl font-semibold text-slate-700 dark:text-slate-300 animate-fade-in-up"
         style={{ animationDelay: '200ms' }}
       >
         Peer Teaching: “PERAN KECERDASAN ARTIFISIAL DALAM KOMUNIKASI”
       </h2>
       <p 
-        className="text-md text-slate-500 animate-fade-in-up"
+        className="text-md text-slate-500 dark:text-slate-400 animate-fade-in-up"
         style={{ animationDelay: '300ms' }}
       >
         Mata Pelajaran: Koding dan Kecerdasan Artifisial

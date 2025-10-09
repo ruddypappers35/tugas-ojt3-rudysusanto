@@ -27,7 +27,7 @@ const socialLinks = [
 const ProfileCard: React.FC = () => {
   return (
     <div 
-      className="bg-slate-50/60 backdrop-blur-sm border border-slate-300/50 rounded-2xl p-6 shadow-xl shadow-slate-300/50 animate-fade-in-up"
+      className="bg-slate-50/60 dark:bg-slate-800/60 backdrop-blur-sm border border-slate-300/50 dark:border-slate-700/50 rounded-2xl p-6 shadow-xl shadow-slate-300/50 dark:shadow-black/50 animate-fade-in-up"
       style={{ animationDelay: '400ms' }}
     >
       <div className="flex flex-col sm:flex-row items-center gap-6">
@@ -38,15 +38,17 @@ const ProfileCard: React.FC = () => {
         />
         <div className="text-center sm:text-left">
           <div className="flex items-center justify-center sm:justify-start gap-2">
-            <h3 className="text-2xl font-bold text-slate-900">Rudy Susanto, S.Pd</h3>
-            <CheckCircle2 
-              className="w-6 h-6 text-white fill-blue-500 cursor-pointer" 
-              aria-label="Verified" 
-              title="Terverifikasi" 
-            />
+            <h3 className="text-2xl font-bold text-slate-900 dark:text-slate-100">Rudy Susanto, S.Pd</h3>
+            {/* Fix: The `title` prop is not valid on lucide-react icons. Wrapped the icon in a `span` with a `title` attribute to provide a tooltip. */}
+            <span title="Terverifikasi">
+              <CheckCircle2 
+                className="w-6 h-6 text-white fill-blue-500 cursor-pointer" 
+                aria-label="Verified" 
+              />
+            </span>
           </div>
-          <p className="text-lg text-slate-600">SMPN 2 Tungkal Jaya</p>
-          <div className="mt-4 flex items-center justify-center sm:justify-start gap-6 text-slate-600">
+          <p className="text-lg text-slate-600 dark:text-slate-400">SMPN 2 Tungkal Jaya</p>
+          <div className="mt-4 flex items-center justify-center sm:justify-start gap-6 text-slate-600 dark:text-slate-400">
             {socialLinks.map((link, index) => (
               <a
                 key={index}
@@ -54,7 +56,7 @@ const ProfileCard: React.FC = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 title={link.label}
-                className="p-2 rounded-full hover:bg-cyan-100 hover:text-cyan-600 transition-all duration-300 hover:scale-110"
+                className="p-2 rounded-full hover:bg-cyan-100 dark:hover:bg-slate-700 hover:text-cyan-600 dark:hover:text-cyan-400 transition-all duration-300 hover:scale-110"
               >
                 <link.icon className="w-6 h-6" />
               </a>
