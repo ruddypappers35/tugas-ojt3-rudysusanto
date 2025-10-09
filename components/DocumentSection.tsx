@@ -1,5 +1,5 @@
 import React from 'react';
-import { BookOpen, FileText, ExternalLink, Presentation } from 'lucide-react';
+import { BookOpen, FileText, ExternalLink, Presentation, BookUp2 } from 'lucide-react';
 
 interface DocumentSectionProps {
   onOpenModal: (url: string, title: string) => void;
@@ -15,9 +15,16 @@ const documents = [
   },
   {
     id: 'modul',
-    title: 'Modul Ajar',
+    title: 'Modul Ajar (Dokumen)',
     url: 'https://drive.google.com/file/d/1DNINkVVU6W70UWPvNmZLoknEzJXhNEP0/preview',
     icon: BookOpen,
+    type: 'modal' as const,
+  },
+  {
+    id: 'modul-ajar-interaktif',
+    title: 'Modul Ajar Interaktif(Web)',
+    url: 'https://modulajar-kka-rudysusanto.vercel.app/',
+    icon: BookUp2,
     type: 'modal' as const,
   },
   {
@@ -45,7 +52,7 @@ const DocumentSection: React.FC<DocumentSectionProps> = ({ onOpenModal }) => {
       >
         Materi Pembelajaran
       </h3>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
         {documents.map((doc, index) => (
           <button
             key={doc.id}
